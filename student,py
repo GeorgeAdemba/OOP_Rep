@@ -1,0 +1,17 @@
+class Student:
+    def __init__(self,fname,lname,year,course,access_no):
+        self.fname = fname
+        self.lname = lname
+        self.course = course
+        self.year =  year
+        self.access_no = access_no
+        self.email = fname + "." + lname + "@students.ucu.ac.ug"
+
+    #method to display full student name
+    def fullname(self):
+        return "{} {}".format(self.fname, self.lname)
+    
+
+    #method to update year
+    def update_year(self, new_year):
+        self.year = new_year
